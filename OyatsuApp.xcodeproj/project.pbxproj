@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445D3F3E7CB4AD559D009F28 /* Pods_OyatsuApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A067B771441FC687DE118 /* Pods_OyatsuApp.framework */; };
 		8F51232921A2915F00364356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51232821A2915F00364356 /* AppDelegate.swift */; };
 		8F51232B21A2915F00364356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51232A21A2915F00364356 /* ViewController.swift */; };
 		8F51232E21A2915F00364356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F51232C21A2915F00364356 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27C6BA54F0F8687B9E6E5D0D /* Pods-OyatsuApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OyatsuApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OyatsuApp/Pods-OyatsuApp.debug.xcconfig"; sourceTree = "<group>"; };
+		480F538EADE242F965E8E6F4 /* Pods-OyatsuApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OyatsuApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OyatsuApp/Pods-OyatsuApp.release.xcconfig"; sourceTree = "<group>"; };
+		4C8A067B771441FC687DE118 /* Pods_OyatsuApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OyatsuApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F51232521A2915F00364356 /* OyatsuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OyatsuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F51232821A2915F00364356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F51232A21A2915F00364356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445D3F3E7CB4AD559D009F28 /* Pods_OyatsuApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				8F51232721A2915F00364356 /* OyatsuApp */,
 				8F51232621A2915F00364356 /* Products */,
+				A98B01FC20757767C47B9532 /* Pods */,
+				BF0270B88503B832AA1CD90C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = OyatsuApp;
 			sourceTree = "<group>";
 		};
+		A98B01FC20757767C47B9532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27C6BA54F0F8687B9E6E5D0D /* Pods-OyatsuApp.debug.xcconfig */,
+				480F538EADE242F965E8E6F4 /* Pods-OyatsuApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF0270B88503B832AA1CD90C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C8A067B771441FC687DE118 /* Pods_OyatsuApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F51233721A2916100364356 /* Build configuration list for PBXNativeTarget "OyatsuApp" */;
 			buildPhases = (
+				97287DE2060CDBF504948C7C /* [CP] Check Pods Manifest.lock */,
 				8F51232121A2915F00364356 /* Sources */,
 				8F51232221A2915F00364356 /* Frameworks */,
 				8F51232321A2915F00364356 /* Resources */,
+				3912AE13F8DFF5B7893D60FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3912AE13F8DFF5B7893D60FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OyatsuApp/Pods-OyatsuApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OyatsuApp/Pods-OyatsuApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97287DE2060CDBF504948C7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OyatsuApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F51232121A2915F00364356 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		8F51233821A2916100364356 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C6BA54F0F8687B9E6E5D0D /* Pods-OyatsuApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		8F51233921A2916100364356 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480F538EADE242F965E8E6F4 /* Pods-OyatsuApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
